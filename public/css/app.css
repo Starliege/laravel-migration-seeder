@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: left;
+  padding: 36px;
+}
+
+li {
+  font-size: 24px;
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0e0e0e;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimotionals {
+  width: 350px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+  cursor: default;
+}
+
+.testimotionals .card {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 600px;
+  margin: 0 auto;
+  background: rgb(37, 37, 37);
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 5px 20px rgba(191, 15, 15, 0.5);
+}
+
+.testimotionals .card .layer {
+  z-index: 1;
+  position: absolute;
+  top: calc(100% - 2px);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background: linear-gradient(to left, darkred, red);
+  transition: 0.5s;
+}
+
+.testimotionals .card .content {
+  z-index: 2;
+  position: relative;
+}
+
+.testimotionals .card:hover .layer {
+  top: 0;
+}
+
+.testimotionals .card .conte nt .details h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.testimotionals .card .content .details h2 span {
+  font-size: 18px;
+  color: red;
+  transition: 0.5s;
+}
+
+.testimotionals .card:hover .content .details h2 span {
+  color: white;
+  position: relative;
+}
+
